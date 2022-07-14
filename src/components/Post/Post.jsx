@@ -8,7 +8,7 @@ import { Avatar } from "../Avatar/Avatar";
 import styles from "./Post.module.css";
 
 export function Post({ author, content, publishedAt }) {
-  const [comments, setComments] = useState(["Post muito bacana, hein?!"]);
+  const [comments, setComments] = useState([]);
   const [newCommentText, setNewCommentText] = useState("");
 
   const publishedDateFormatted = format(
